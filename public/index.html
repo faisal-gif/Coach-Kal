@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coach Kal — Asisten Kalistenik di Rumah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>Coach Kal</h1>
+        <p>Asisten kalistenik buat kamu yang latihan di rumah — tanya teknik, minta jadwal workout.</p>
+      </header>
+
+      <div id="chat-box" class="chat-box">
+        <div class="msg bot">
+          <div class="bubble">
+            Halo! Aku Coach Kal 💪<br />
+            Tanya apa saja soal kalistenik, atau minta aku bikinkan jadwal latihan mingguan di rumah.
+          </div>
+        </div>
+      </div>
+
+      <div class="chips">
+        <button class="chip" type="button">Buatkan jadwal kalistenik 3x seminggu untuk pemula</button>
+        <button class="chip" type="button">Push-up saya cuma kuat 3x, gimana progresinya?</button>
+        <button class="chip" type="button">Pemanasan yang benar sebelum latihan apa saja?</button>
+      </div>
+
+      <form id="chat-form" class="chat-form">
+        <input
+          type="text"
+          id="user-input"
+          placeholder="Tulis pertanyaanmu..."
+          autocomplete="off"
+          required
+        />
+        <button type="submit">Kirim</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
